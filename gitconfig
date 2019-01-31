@@ -1,0 +1,23 @@
+[user]
+    email = emil.fresk@gmail.com
+    name = Emil Fresk
+[pull]
+    rebase = true
+[alias]
+    tree = log --oneline --decorate --all --graph
+    co = checkout
+    br = branch
+    st = status
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    visual = !gitk
+    ci = commit
+	cloner = clone --recursive
+[push]
+    default = simple
+[core]
+    editor = nvim
+[merge]
+	ff = false
+[rebase]
+    autoStash = true
