@@ -219,6 +219,8 @@ exec --no-startup-id syndaemon -i 0.5 -t -K -R -d
 # Switch keyboard layout
 exec_always "setxkbmap -layout \"se(nodeadkeys),us\" -option grp:win_space_toggle -option ctrl:nocaps"
 
+# Window settings
+for_window [class="(?i)thunar"] floating enable resize set 1200 900
 
 # Disable window titlebars entirely
 for_window [class="^.*"] border pixel 2
