@@ -221,6 +221,7 @@ exec_always "setxkbmap -layout \"se(nodeadkeys),us\" -option grp:win_space_toggl
 
 # Window settings
 for_window [class="(?i)thunar"] floating enable resize set 1200 900
+for_window [class="Galculator"] floating enable
 
 # Disable window titlebars entirely
 for_window [class="^.*"] border pixel 2
