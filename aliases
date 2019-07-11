@@ -1,6 +1,6 @@
 alias install="yay -S"
 alias update="yay -Sy"
-alias upgrade="sudo pacman -Syu; yay -Syua; paccache -r; rustup update"
+alias upgrade="sudo pacman -Syu; yay -Syua; paccache -r; yay -Sc --noconfirm; rustup update"
 alias remove="yay -R"
 alias search="yay -Ss"
 alias ack="ag -Q"
