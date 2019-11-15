@@ -12,13 +12,16 @@
     last = log -1 HEAD
     visual = !gitk
     ci = commit
-	cloner = clone --recursive
-	history = log -p --
+    cloner = clone --recursive
+    history = log -p --
 [push]
     default = simple
 [core]
     editor = nvim
+	pager = delta --light
 [merge]
 	ff = false
 [rebase]
     autoStash = true
+[branch "master"]
+	push = remote

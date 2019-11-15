@@ -2,6 +2,7 @@
 
 LOCK_ICON=$HOME/.config/configs/lock.png
 
+rm -f /tmp/screen.png
 scrot /tmp/screen.png
 convert /tmp/screen.png -scale 5% -scale 2000% /tmp/screen.png
 #convert /tmp/screen.png -blur 0x10 /tmp/screen.png

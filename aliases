@@ -14,3 +14,4 @@ alias cleanr="bash -c \"find . -iname Cargo.toml | xargs -I{} cargo clean --mani
 alias gdb-bmp='arm-none-eabi-gdb -ex "tui enable" -ex "layout split" -ex "target extended-remote /dev/ttyBmpGDB" -ex "monitor connect_srst enable" -ex "monitor swdp_scan" -ex "attach 1" -ex "focus cmd"'
 alias nwr="sudo systemctl restart NetworkManager"
 alias scan="echo Scaning network...; nmap -sn (echo (hostname -I) | cut -d\".\" -f1-3).1/24 1>/dev/null; arp -a | grep -v incomplete"
+alias bat="bat --theme base16"
