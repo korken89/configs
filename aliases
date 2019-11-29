@@ -11,6 +11,7 @@ alias vi=nvim
 alias vim=nvim
 alias pullr="bash -c \"find . -name \".git\" -type d | sed 's/\/.git//' |  xargs -P10 -I{} git -C {} pull\""
 alias cleanr="bash -c \"find . -iname Cargo.toml | xargs -I{} cargo clean --manifest-path {}\""
+alias docr="bash -c \"find . -iname Cargo.toml | xargs -I{} cargo doc --manifest-path {}\""
 alias gdb-bmp='arm-none-eabi-gdb -ex "tui enable" -ex "layout split" -ex "target extended-remote /dev/ttyBmpGDB" -ex "monitor connect_srst enable" -ex "monitor swdp_scan" -ex "attach 1" -ex "focus cmd"'
 alias nwr="sudo systemctl restart NetworkManager"
 alias scan="echo Scaning network...; nmap -sn (echo (hostname -I) | cut -d\".\" -f1-3).1/24 1>/dev/null; arp -a | grep -v incomplete"
