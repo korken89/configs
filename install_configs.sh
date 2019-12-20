@@ -25,6 +25,7 @@ ln -sf "$(pwd)/backlight.sh" ~/.backlight.sh
 
 sudo ln -sf "$(pwd)/lock.sh" /usr/bin/pixellock
 sudo ln -sf "$(pwd)/i3exit" /usr/bin/i3exit
+sudo ln -sf "$(pwd)/quick_note.sh" /usr/bin/qn
 
 # Extend .bashrc
 echo "[[ -f '$(pwd)/aliases' ]] && source $(pwd)/aliases " >> ~/.bashrc
