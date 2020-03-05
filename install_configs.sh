@@ -22,6 +22,8 @@ ln -sf "$(pwd)/ymusic.sh" ~/.ymusic.sh
 ln -sf "$(pwd)/gitconfig" ~/.gitconfig
 ln -sf "$(pwd)/gdbinit" ~/.gdbinit
 ln -sf "$(pwd)/backlight.sh" ~/.backlight.sh
+ln -sf "$(pwd)/tmux.conf.local" ~/.tmux.conf.local
+ln -sf "$(pwd)/tmux/.tmux.conf" ~/.tmux.conf
 
 sudo ln -sf "$(pwd)/lock.sh" /usr/bin/pixellock
 sudo ln -sf "$(pwd)/i3exit" /usr/bin/i3exit
