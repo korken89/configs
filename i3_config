@@ -66,10 +66,11 @@ bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute s
 bindsym XF86MonBrightnessUp exec ~/.backlight.sh inc # increase screen brightness
 bindsym XF86MonBrightnessDown exec ~/.backlight.sh dec # decrease screen brightness
 
-bindsym Print exec "scrot -e 'mv $f ~/Screenshots'; sleep 1; exec notify-send 'screenshot has been saved to ~/Screenshots'"
+#bindsym Print exec "scrot -e 'mv $f ~/Screenshots'; sleep 1; exec notify-send 'screenshot has been saved to ~/Screenshots'"
 bindsym $mod+Print --release exec "scrot -ue 'mv $f ~/Screenshots'; sleep 1; exec notify-send 'screenshot has been saved to ~/Screenshots'"
 #bindsym $mod+Shift+p --release exec "notify-send 'selection will be saved to ~/Screenshots'; scrot -se 'mv $f ~/Screenshots'"
-bindsym $mod+Shift+p --release exec "notify-send 'selection will be saved to clipboard'; scrot -se 'xclip -selection clipboard -t image/png < $f && rm $f'"
+#bindsym $mod+Shift+p --release exec "notify-send 'selection will be saved to clipboard'; scrot -se 'xclip -selection clipboard -t image/png < $f && rm $f'"
+bindsym $mod+Shift+p --release exec "notify-send 'selection will be saved to clipboard'; maim -us | xclip -selection clipboard -t image/png"
 
 # utilities
 bindsym $mod+m exec urxvt -e ~/.ymusic.sh
